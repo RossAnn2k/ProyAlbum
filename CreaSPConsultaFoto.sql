@@ -8,5 +8,4 @@ vclasific FOTOGRAFIA.CLASIFICACION%TYPE;
      end;
   /
   
-  commit
   
