@@ -1,14 +1,14 @@
-
-create or replace PROCEDURE opcionesDoctoM( 
+SET SERVEROUTPUT ON;
+create or replace PROCEDURE opcionesDoctoM(  --Opcion M Modificacion
 FOL in	DOCTOFOTOGRAFICO.FOLIO%TYPE,
 CLASIF	in DOCTOFOTOGRAFICO.CLASIFICACION%TYPE,
 COMEN in DOCTOFOTOGRAFICO.COMENTARIO%TYPE
 )
 IS
-  -- Declaración de variables locales
-SET SERVEROUTPUT ON;  
+  -- DeclaraciÃ³n de variables locales
+  
   BEGIN
-  -- Instrucciones de ejecución
+  -- Instrucciones de ejecuciÃ³n
     BEGIN
         update DOCTOFOTOGRAFICO set comentario=comen where FOLIO = FOL;
         commit;
